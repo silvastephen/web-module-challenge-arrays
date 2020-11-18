@@ -180,9 +180,13 @@ Use the filterByWord function below to do the following:
 function filterByWord(arr , name){
     if(arr.includes(name)){
         let arrayTwo = [];
-        for(i = 0; i < array.length; i++;){
-            
+        // ["Chocolate", "Chocolate Almond", "Chocolate Chip", "Chocolate Fudge", "Chocolate Mint", "Chocolate Ribbon"]
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i].includes(name)){
+                arrayTwo.push(arr[i]);
+            }
         }
+        return arrayTwo;
     }
 }
 
